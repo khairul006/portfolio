@@ -12,3 +12,7 @@ client/.taste-skill/shots/
 client/.taste-skill/quick/
 client/.taste-skill/gate/
 client/.taste-skill/final*/
+
+# the original resume lives here locally; the site serves client/public/resume.pdf
+/Software_Engineer_Resume_Mohamad_Khairul_Zamidi.pdf
+/DSC04701.jpg
