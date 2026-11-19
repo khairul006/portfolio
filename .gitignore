@@ -1,0 +1,14 @@
+# dependencies and build output
+node_modules/
+bin/
+obj/
+server/Portfolio.Api/wwwroot/
+# contact-form messages saved by the API
+server/Portfolio.Api/data/
+data/
+# design-check browser profile and screenshots (kept: waivers, deal history)
+client/.taste-skill/chrome-check/
+client/.taste-skill/shots/
+client/.taste-skill/quick/
+client/.taste-skill/gate/
+client/.taste-skill/final*/

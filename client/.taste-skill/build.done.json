@@ -1,0 +1,11 @@
+{
+ "page": "../server/Portfolio.Api/wwwroot/index.html",
+ "dir": "C:\\Users\\khair\\VSCoder\\Vibing\\portfolio\\client",
+ "kind": "software",
+ "start": "2026-11-19T07:36:59.778Z",
+ "by": "start.mjs",
+ "url": null,
+ "root": "../server/Portfolio.Api/wwwroot",
+ "category": "backend engineering portfolio",
+ "primary": "Send a message"
+}

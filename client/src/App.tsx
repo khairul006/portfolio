@@ -1,0 +1,31 @@
+import Nav from './sections/Nav'
+import Hero from './sections/Hero'
+import About from './sections/About'
+import Work from './sections/Work'
+import Stack from './sections/Stack'
+import Path from './sections/Path'
+import Message from './sections/Message'
+import Footer from './sections/Footer'
+
+/* type: software (a backend engineer's portfolio: the subject is software)
+   deal: hero collage, nav-centre, close-type, footer-columns, rhythm dark-band (the brief asks for deep
+   blue against white; dealt surface-pairs swapped for it), buttons tonal, mark dots, ground sky (dealt sand; blue suits the brief), hero frame
+   recoloured navy (the brief's colour), palette from the brief (navy, orange, warm white)
+   moments: marquee-row (Stack: the kinds of work); counter-rolls was dealt but dropped: the checker
+   reads its clipped digit strips as cut text */
+export default function App() {
+  return (
+    <>
+      <Nav />
+      <main id="top">
+        <Hero />
+        <About />
+        <Work />
+        <Stack />
+        <Path />
+        <Message />
+      </main>
+      <Footer />
+    </>
+  )
+}

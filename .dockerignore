@@ -1,0 +1,7 @@
+**/node_modules
+**/bin
+**/obj
+**/.taste-skill
+server/Portfolio.Api/wwwroot
+server/Portfolio.Api/data
+Software_Engineer_Resume_Mohamad_Khairul_Zamidi.pdf
