@@ -33,7 +33,7 @@ cd server && dotnet run --project Portfolio.Api   # http://localhost:5080 (neede
 
 ## GitHub Pages
 
-Every push to  publishes the client as a static site to https://khairul006.github.io/portfolio/ (). Pages cannot run the .NET API, so on that build the contact form opens the visitor's email app, addressed to you. Run the Docker image instead when you want the form to save messages.
+Every push to `main` publishes the client as a static site to https://khairul006.github.io/portfolio/ (`.github/workflows/pages.yml`). Pages cannot run the .NET API, so on that build the contact form opens the visitor's email app, addressed to you. Run the Docker image instead when you want the form to save messages.
 
 One-time setup: in the repo's **Settings > Pages**, set **Source** to **GitHub Actions**.
 
