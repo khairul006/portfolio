@@ -17,7 +17,7 @@ export default function Path() {
         <ol className="grid rail">
           {steps.map((s, i) => (
             <li className={`span-3${i === steps.length - 1 ? ' is-new' : ''}`} key={s.year}>
-              <div className="panel rail__panel">
+              <div className="rail__panel">
                 {s.icon && <span className="ic-tile ic-tile--56"><img className="ic ic-40" src={`/assets/icons/${s.icon}.svg`} alt="" width="40" height="40" /></span>}
                 <span className="rail__mark">{s.mark}</span>
               </div>

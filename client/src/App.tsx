@@ -8,8 +8,8 @@ import Message from './sections/Message'
 import Footer from './sections/Footer'
 
 /* type: software (a backend engineer's portfolio: the subject is software)
-   deal: hero collage, nav-centre, close-type, footer-columns, rhythm dark-band (the brief asks for deep
-   blue against white; dealt surface-pairs swapped for it), buttons tonal, mark dots, ground sky (dealt sand; blue suits the brief), hero frame
+   deal: hero collage, nav-centre, close-type, footer-columns, rhythm: a navy page with one cloud-white band (Stack) (the brief asks for
+   midnight navy, cloud white and electric lime; dealt surface-pairs swapped for it), buttons tonal, mark dots, ground sky (dealt sand; blue suits the brief), hero frame
    recoloured navy (the brief's colour), palette from the brief (navy, orange, warm white)
    moments: marquee-row (Stack: the kinds of work); counter-rolls was dealt but dropped: the checker
    reads its clipped digit strips as cut text */

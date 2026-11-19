@@ -14,7 +14,7 @@ export default function Hero() {
     <section className="hero hero--collage" data-enter aria-labelledby="hero-h">
       <div className="wrap"><div className="hero-text grid hero__grid">
         <div className="hero__text span-5">
-          <h1 id="hero-h">Backend engineer for payment integrations</h1>
+          <h1 id="hero-h">Backend engineer for <span className="lime">payment integrations</span></h1>
           <p className="hero__lead">I build C#/.NET and NestJS services that carry toll payments from ANPR gantries to Maybank and JustGO over RabbitMQ, signed, encrypted and retried.</p>
           <div className="btn-row">
             <a className="btn btn--primary" href="#message">Send a message<Arrow /></a>
