@@ -1,5 +1,7 @@
 # Khairul Zamidi: portfolio
 
+**Live site: https://khairul006.github.io/portfolio/**
+
 A one-page portfolio: a React (Vite, TypeScript) client served by an ASP.NET Core (.NET 10) API that also takes contact-form messages.
 
 ```
