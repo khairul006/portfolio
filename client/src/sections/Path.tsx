@@ -1,3 +1,4 @@
+import { asset } from '../url'
 type Step = { year: string; title: string; line: string; mark: string; icon?: string }
 
 const steps: Step[] = [
@@ -18,7 +19,7 @@ export default function Path() {
           {steps.map((s, i) => (
             <li className={`span-3${i === steps.length - 1 ? ' is-new' : ''}`} key={s.year}>
               <div className="rail__panel">
-                {s.icon && <span className="ic-tile ic-tile--56"><img className="ic ic-40" src={`/assets/icons/${s.icon}.svg`} alt="" width="40" height="40" /></span>}
+                {s.icon && <span className="ic-tile ic-tile--56"><img className="ic ic-40" src={asset(`assets/icons/${s.icon}.svg`)} alt="" width="40" height="40" /></span>}
                 <span className="rail__mark">{s.mark}</span>
               </div>
               <span className="rail__dot" aria-hidden="true"></span>

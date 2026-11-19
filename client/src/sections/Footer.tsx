@@ -1,3 +1,4 @@
+import { asset } from '../url'
 import Arrow from './Arrow'
 import { links } from './Nav'
 
@@ -24,7 +25,7 @@ export default function Footer() {
             <div className="span-2 start-11 footer__col"><h3>Elsewhere</h3><ul>
               <li><a href="https://www.linkedin.com/in/khairul-zamid-006abc" target="_blank" rel="noreferrer">LinkedIn</a></li>
               <li><a href="https://github.com/khairul006" target="_blank" rel="noreferrer">GitHub</a></li>
-              <li><a href="/resume.pdf" download="Khairul_Zamidi_Resume.pdf">Resume PDF</a></li>
+              <li><a href={asset('resume.pdf')} download="Khairul_Zamidi_Resume.pdf">Resume PDF</a></li>
             </ul></div>
           </div>
           <div className="footer__legal">

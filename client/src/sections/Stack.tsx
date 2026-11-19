@@ -1,3 +1,4 @@
+import { asset } from '../url'
 // Icons fetched by the kit's icons.mjs into public/assets/icons, in their owners' colours.
 const tools = [
   ['c-sharp', 'C#'], ['dotnet', '.NET'], ['typescript', 'TypeScript'], ['python', 'Python'],
@@ -21,7 +22,7 @@ export default function Stack() {
         <ul className="ic-grid ic-grid--mosaic stack__grid">
           {tools.map(([id, name]) => (
             <li className="ic-cell" key={id}>
-              <span className="ic-tile ic-tile--48"><img className={`ic ic-32${id === 'oracle' ? ' ic-wide' : ''}`} src={`/assets/icons/${id}.svg`} alt="" width="32" height="32" /></span>
+              <span className="ic-tile ic-tile--48"><img className={`ic ic-32${id === 'oracle' ? ' ic-wide' : ''}`} src={asset(`assets/icons/${id}.svg`)} alt="" width="32" height="32" /></span>
               <span className="ic-cell__name">{name}</span>
             </li>
           ))}

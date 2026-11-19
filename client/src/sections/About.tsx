@@ -1,3 +1,4 @@
+import { asset } from '../url'
 const facts = [
   'Bachelor of Computer Science, Universiti Putra Malaysia',
   'Axiata Digital Leadership Program, 2024',
@@ -26,7 +27,7 @@ export default function About() {
           {/* the portrait and the figures: beside the text on a desktop, the phone's second screen */}
           <div className="about__side span-6 start-7">
             <div className="frame frame--photo about__photo">
-              <img className="frame__img" src="/khairul.jpg" alt="Khairul Zamidi smiling with arms crossed, in a black polo shirt" width="800" height="1000" data-source="client" data-subject="portrait of Khairul Zamidi" />
+              <img className="frame__img" src={asset('khairul.jpg')} alt="Khairul Zamidi smiling with arms crossed, in a black polo shirt" width="800" height="1000" data-source="client" data-subject="portrait of Khairul Zamidi" />
             </div>
             <div className="about__figures">
               {figures.map(f => (

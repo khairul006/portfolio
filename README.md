@@ -31,6 +31,12 @@ cd server && dotnet run --project Portfolio.Api   # http://localhost:5080 (neede
 
 > **Windows Smart App Control** is on for this PC and blocks .NET binaries built locally, so `dotnet run` and `dotnet test` fail with "An Application Control policy has blocked this file". Use Docker, or turn Smart App Control off in Windows Security, App & browser control.
 
+## GitHub Pages
+
+Every push to  publishes the client as a static site to https://khairul006.github.io/portfolio/ (). Pages cannot run the .NET API, so on that build the contact form opens the visitor's email app, addressed to you. Run the Docker image instead when you want the form to save messages.
+
+One-time setup: in the repo's **Settings > Pages**, set **Source** to **GitHub Actions**.
+
 ## The contact API
 
 `POST /api/contact` takes form data (`name`, `email`, `message`, optional `company`):

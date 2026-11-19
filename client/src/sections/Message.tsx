@@ -1,3 +1,4 @@
+import { asset, contactEndpoint } from '../url'
 const contacts = [
   { label: 'Email', icon: 'gmail', text: 'khairulzamidi2000@gmail.com', href: 'mailto:khairulzamidi2000@gmail.com', external: false },
   { label: 'LinkedIn', icon: 'linkedin', text: 'khairul-zamid-006abc', href: 'https://www.linkedin.com/in/khairul-zamid-006abc', external: true },
@@ -18,13 +19,13 @@ export default function Message() {
               {contacts.map(c => (
                 <li className="ic-row" key={c.label}>
                   <span className="ic-row__main"><span className="ic-row__meta">{c.label}</span><a className="link" href={c.href} {...(c.external ? { target: '_blank', rel: 'noreferrer' } : {})}>{c.text}</a></span>
-                  <span className="ic-tile ic-tile--48"><img className="ic ic-28" src={`/assets/icons/${c.icon}.svg`} alt="" width="28" height="28" /></span>
+                  <span className="ic-tile ic-tile--48"><img className="ic ic-28" src={asset(`assets/icons/${c.icon}.svg`)} alt="" width="28" height="28" /></span>
                 </li>
               ))}
             </ul>
           </div>
           <div className="span-6 start-7 message__panel">
-            <form className="form" action="mailto:khairulzamidi2000@gmail.com" method="post" encType="text/plain" data-endpoint="/api/contact" data-sent="Your message is in. I reply within two working days." data-failed="The message did not send. Try again, or email me directly." noValidate>
+            <form className="form" action="mailto:khairulzamidi2000@gmail.com" method="post" encType="text/plain" data-endpoint={contactEndpoint} data-sent="Your message is in. I reply within two working days." data-failed="The message did not send. Try again, or email me directly." noValidate>
               <div className="field"><label htmlFor="f-name">Name</label>
                 <input id="f-name" name="name" type="text" autoComplete="name" required maxLength={100} aria-describedby="f-name-err" />
                 <p className="field__error" id="f-name-err" hidden>Write your name.</p></div>

@@ -1,3 +1,4 @@
+import { asset } from '../url'
 import Arrow from './Arrow'
 
 const queues = [
@@ -18,7 +19,7 @@ export default function Hero() {
           <p className="hero__lead">I build C#/.NET and NestJS services that carry toll payments from ANPR gantries to Maybank and JustGO over RabbitMQ, signed, encrypted and retried.</p>
           <div className="btn-row">
             <a className="btn btn--primary" href="#message">Send a message<Arrow /></a>
-            <a className="btn btn--secondary" href="/resume.pdf" download="Khairul_Zamidi_Resume.pdf">Download my resume</a>
+            <a className="btn btn--secondary" href={asset('resume.pdf')} download="Khairul_Zamidi_Resume.pdf">Download my resume</a>
           </div>
           <p className="hero__proof">3 years at TERAS Teknologi. Microsoft AZ‑204 certified.</p>
         </div>
