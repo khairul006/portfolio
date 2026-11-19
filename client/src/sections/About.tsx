@@ -7,7 +7,7 @@ const facts = [
 const figures = [
   { value: '3.931', label: 'CGPA at Universiti Putra Malaysia' },
   { value: '3+', label: 'years shipping production backends' },
-  { value: '4', label: 'certificates, AZ-204 the latest' },
+  { value: '4', label: 'certificates, AZ‑204 the latest' },
 ]
 
 export default function About() {
@@ -26,7 +26,7 @@ export default function About() {
           {/* the portrait and the figures: beside the text on a desktop, the phone's second screen */}
           <div className="about__side span-6 start-7">
             <div className="frame frame--photo about__photo">
-              <img className="frame__img" src="/khairul.jpg" alt="Khairul Zamidi in a dark suit and white shirt" width="297" height="393" data-source="client" data-subject="portrait of Khairul Zamidi" />
+              <img className="frame__img" src="/khairul.jpg" alt="Khairul Zamidi smiling with arms crossed, in a black polo shirt" width="800" height="1000" data-source="client" data-subject="portrait of Khairul Zamidi" />
             </div>
             <div className="about__figures">
               {figures.map(f => (
